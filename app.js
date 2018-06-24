@@ -2,6 +2,7 @@ let express = require('express');
 let bodyParser = require('body-parser');
 let usuarios_route = require('./routes/usuarios.routes');
 let productos_route = require('./routes/productos.routes');
+let accesos_route = require('./routes/acceso.routes');
 const port = 3000;
 
 let app = express();
@@ -17,6 +18,7 @@ app.use(bodyParser.json());
 // rutas
 app.use('/usuarios', usuarios_route);
 app.use('/productos', productos_route);
+app.use('/accesos', accesos_route);
 
 app.get('/', function(req, res) {
     let obj = {nombre: "Luis", email: "luenmuvel@gmail.com", nacionalidad: "peruano", ciudades: ["lima", "ica", "tumbes", "iquitos"]};
