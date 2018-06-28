@@ -11,4 +11,8 @@ router.post('/validar', function( req, res ) {
         req.body.password);
 });
 
+router.get('/privada', function(req, res) {
+    res.status(200).send('Esta ruta es privada');
+});
+
 module.exports = router;

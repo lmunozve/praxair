@@ -29,14 +29,15 @@ async function validarAcceso(nombre, apellidos, username, password) {
     // devolver respuesta formateada
 };
 
-function restringirAcceso() {
-    // restringir el acceso a un usuario
-}
+
+
+// function restringirAcceso() {
+//     // restringir el acceso a un usuario
+// }
 
 // module.exports.validarAcceso = validarAcceso;
 // module.exports.restringirAcceso = restringirAcceso;
 
 module.exports = {
-    validarAcceso: validarAcceso,
-    restringirAcceso: restringirAcceso
+    validarAcceso: validarAcceso
 }
