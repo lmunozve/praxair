@@ -1,2 +1,2 @@
-let conexion = require('./conexion.conf');
+let conexion = require('../config/conexion.conf');
 module.exports.conexion = conexion;

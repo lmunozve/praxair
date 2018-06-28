@@ -1,5 +1,5 @@
 let Sequelize = require('sequelize');
-let sequelize = require('./conexion.conf').sequelize;
+let sequelize = require('../config/conexion.conf').sequelize;
 
 const usuario = sequelize.define('usuario', {
     nombre: Sequelize.STRING,
